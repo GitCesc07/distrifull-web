@@ -2,9 +2,10 @@
     
     /* * colrs for using */
     --colorGreen: rgb(41, 125, 39);
-    --colorWhite: #fff;
     --colorLightGrey: rgb(239, 239, 239);
     --colorDarkGray: rgb(216, 206, 215);
+    --colorWhite: #fff;
+    --colorBlack: #000;
 
     /* * fonts for using */
     --fontPrimary: 'Roboto', sans-serif;
@@ -22,3 +23,72 @@ html {
     box-sizing: inherit;
 }
 
+/* Valores generales */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fontPrimary);
+    font-weight: 700;
+}
+
+p {
+    font-family: var(--fontSecondary);
+}
+
+/* * header */
+.encabezado-flex {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.logo-flex {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Modificando tamño del logotipo */
+.logo-flex img {
+    height: 8rem;
+}
+
+.title h1, h2 {
+    margin: .5rem;
+    text-align: center;
+    color: var(--colorGreen);
+}
+
+.title h1 {
+    font-size: 3rem;
+}
+.title h2 {
+    text-transform: uppercase;
+}
+
+/* Estructura de contactanos */
+.btn-informacion {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    border: 1px solid var(--colorGreen);
+    padding: 0 .4rem;
+    border-radius: 8px;
+    transition: 0.3s;   
+}
+
+.btn-informacion:hover {
+    transform: scale(1.1);
+}
+
+.btn-informacion p, a {
+    color: var(--colorBlack);
+    margin: .5rem;
+    text-decoration: none;
+}
+
+.btn-informacion span {
+    font-weight: 700;
+    margin-top: .2rem;
+}
