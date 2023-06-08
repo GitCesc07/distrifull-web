@@ -342,3 +342,43 @@ a {
         padding: 1.8rem 0;
     }
 }
+
+/* Quienes somos */
+.contenedor {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.section-princp {
+    margin-top: 5rem;
+}
+
+.section-princp h2, .section-second h2 {
+    font-weight: 700;
+    color: var(--colorBlack);
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+.flex-sect {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.flex-sect img {
+    width: 35rem;
+}
+
+.flex-sect p {
+    font-size: 1.2rem;
+}
+
+.flex-sect p span {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
