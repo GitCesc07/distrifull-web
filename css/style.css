@@ -1,0 +1,24 @@
+:root {
+    
+    /* * colrs for using */
+    --colorGreen: rgb(41, 125, 39);
+    --colorWhite: #fff;
+    --colorLightGrey: rgb(239, 239, 239);
+    --colorDarkGray: rgb(216, 206, 215);
+
+    /* * fonts for using */
+    --fontPrimary: 'Roboto', sans-serif;
+    --fontSecondary: 'Roboto Condensed', sans-serif;
+    --fontAlternate: 'Playfair Display', serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
