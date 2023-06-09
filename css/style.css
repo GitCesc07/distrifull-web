@@ -457,6 +457,13 @@ a {
 
 .categorias-flex {
     display: block;
+    padding: 0 0 2rem;
+}
+
+@media (min-width: 768px) {
+    .categorias-flex {
+        padding: 2rem;
+    }
 }
 
 .list-primary ul {
@@ -486,4 +493,44 @@ a {
     .list-primary ul {
         margin-bottom: 0;
     }
+}
+
+/* Card de los catalogos */
+
+.section-catalogo {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.catalog-flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-catalog {
+    border: 1px solid var(--colorBlack);
+    border-radius: 8px;
+    padding: .5rem 2rem 2rem;
+    text-align: center;
+}
+
+.card-catalog img {
+    height: 20rem;
+}
+
+.btn-info {
+    display: flex;
+    align-items: center;
+    background-color: var(--colorGreen);
+    color: var(--colorWhite);
+    padding: .5rem 1rem;
+    justify-content: space-around;
+    border-radius: 8px;
+    max-width: 100%;
+    transition: 0.3s;
+}
+
+.btn-info:hover {
+    transform: scale(1.1);
 }
