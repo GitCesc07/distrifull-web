@@ -26,16 +26,6 @@
                     <h1>Distrifull</h1>
                     <h2>Nicaragua</h2>
                 </div>
-                <!-- <div class="btn-menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="40" height="40"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#297D27" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M4 6l16 0" />
-                        <path d="M4 12l16 0" />
-                        <path d="M4 18l16 0" />
-                    </svg>
-                </div> -->
             </div>
         </a>
 
@@ -61,10 +51,10 @@
 
     <nav id="navegacion">
         <ul>
-            <li><a href="#somos">¿Quienes Somos?</a></li>
-            <li><a href="#clientes">Nuestros Clientes</a></li>
-            <li><a href="#">Categorias</a></li>
-            <li><a href="#">Catalogos</a></li>
+            <li><a onclick="seleccionarOption()" href="#somos">¿Quienes Somos?</a></li>
+            <li><a onclick="seleccionarOption()" href="#clientes">Nuestros Clientes</a></li>
+            <li><a onclick="seleccionarOption()" href="#categoria">Categorias</a></li>
+            <li><a onclick="seleccionarOption()" href="#">Catalogos</a></li>
         </ul>
     </nav>
     <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -96,7 +86,7 @@
             </div>
         </section>
 
-        <div data-aos="zoom-in">
+        <div data-aos="zoom-in" data-aos-duration="4000">
             <section id="clientes" class="section-second">
                 <h2>Nuestros Clientes</h2>
                 <div class="clientes-grid">
@@ -110,6 +100,35 @@
             </section>
         </div>
 
+        <section id="categoria" class="section-categoria">
+            <h2>Categorias</h2>
+
+            <div class="categorias-flex">
+                <div class="list-primary" data-aos="fade-right" data-aos-duration="4000">
+                    <ul>
+                        <li>Herramientas</li>
+                        <li>Suministros médicos</li>
+                        <li>Equipos de seguridad ocupacional</li>
+                        <li>Artículos deportivos</li>
+                        <li>Artículos publicitarios</li>
+                        <li>Mobiliario y equipo</li>
+                        <li>Iluminación</li>
+                    </ul>
+                </div>
+
+                <div class="list-second"  data-aos="fade-left" data-aos-duration="4000">
+                    <ul>
+                        <li>Suministros de oficina</li>
+                        <li>Artículos de limpieza</li>
+                        <li>Sistema de refrigeración y aires acondicionados</li>
+                        <li>Partes industriales</li>
+                        <li>Respuestas de vehículos</li>
+                        <li>Equipos ópticos</li>
+                        <li>Equipo Medico</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
     </main>
 
