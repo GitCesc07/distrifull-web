@@ -203,7 +203,7 @@ a {
         content: '';
         display: block;
         z-index: -1;
-        background: var(--colorWhite);
+        background: var(--colorDarkGray);
         width: 0;
         height: var(--LineHeight);
         bottom: var(--BottomOffset);
@@ -338,7 +338,7 @@ a {
     }
 
     nav.responsive ul li {
-        border-bottom: 1px solid var(--colorWhite);
+        border-bottom: 1px solid var(--colorDarkGray);
         padding: 1.8rem 0;
     }
 }
@@ -350,7 +350,7 @@ a {
 }
 
 .section-princp, .section-second {
-    margin-top: 4rem;
+    margin-top: 4rem;    
 }
 
 .section-princp h2, .section-second h2 {
@@ -360,14 +360,11 @@ a {
     font-size: 2.5rem;
 }
 
-
 .flex-sect {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 2rem;
-    margin-top: 2rem;
-    padding: 2rem;
+    gap: 2rem;    
 }
 
 .flex-sect img {
@@ -381,4 +378,27 @@ a {
 .flex-sect p span {
     font-weight: 700;
     font-size: 1.8rem;
+}
+
+.flex-sect, .clientes-grid {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+
+.clientes-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
+}
+
+.clientes-grid img {
+    max-width: 100%;
+}
+
+.img-width {
+    height: 10rem;
+    width: 10rem;
 }

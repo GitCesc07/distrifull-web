@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/normalice.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,7 +21,7 @@
     <div class="encabezado-flex">
         <a href="#">
             <div class="logo-flex">
-                <img src="img/logoblanco_png_500x500px.png" alt="Logotipo">                
+                <img src="img/logoblanco_png_500x500px.png" alt="Logotipo">
                 <div class="title">
                     <h1>Distrifull</h1>
                     <h2>Nicaragua</h2>
@@ -67,8 +68,9 @@
         </ul>
     </nav>
     <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu icon icon-tabler icon-tabler-menu-2" width="36" height="36"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#297D27" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu icon icon-tabler icon-tabler-menu-2" width="36"
+            height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#297D27" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M4 6l16 0" />
             <path d="M4 12l16 0" />
@@ -83,23 +85,39 @@
             <div class="flex-sect">
                 <img src="img/lecture-g9d856c00a_1280.jpg" alt="">
                 <p>
-                    <span>Distrifull Nicaragua</span> una empresa importadora y comercializadora de productos diversos. <br> <br>
+                    <span>Distrifull Nicaragua</span> una empresa importadora y comercializadora de productos
+                    diversos. <br>
+                    <br>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                     Blanditiis excepturi quia officia. Aliquam placeat exercitationem deserunt illo adipisci. <br>
-                    Soluta qui necessitatibus quis voluptatum, quia totam assumenda consequuntur delectus velit odio?
+                    Soluta qui necessitatibus quis voluptatum, quia totam assumenda consequuntur delectus velit
+                    odio?
                 </p>
             </div>
         </section>
 
-        <section id="clientes" class="section-second">
-            <h2>Nuestros Clientes</h2>
+        <div data-aos="zoom-in">
+            <section id="clientes" class="section-second">
+                <h2>Nuestros Clientes</h2>
+                <div class="clientes-grid">
+                    <img src="img/vision-mundial.jpg" alt="Visión Mundial">
+                    <img src="img/organizacion-panamericana.png" alt="OMS">
+                    <img class="img-width" src="img/fiat-panis.png" alt="FIAT-PANIS">
+                    <img src="img/empresa-portuaria-n.png" alt="EPN">
+                    <img src="img/ministerio-salud.png" alt="MINSA">
+                </div>
 
-            
-        </section>
+            </section>
+        </div>
+
 
     </main>
 
     <script src="js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
