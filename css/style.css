@@ -594,7 +594,8 @@ a {
 }
 
 /* Mostrando ubicación de la Empresa */
-.ubication {
+.ubication,
+.footer {
     max-width: 100rem;
     margin: 0 auto;
 }
@@ -643,10 +644,88 @@ a {
         align-items: center;
         justify-content: space-between;
         gap: 2rem;
+        margin-bottom: 3rem;
     }
 
     .map {
         height: 25rem;
         width: 45rem;
     }
+}
+
+/* Footer */
+
+.footer {
+    display: block;
+}
+
+.footer-flex {
+    padding: 1rem 2rem;
+    font-family: var(--fontSecondary);
+    font-weight: 700;
+}
+
+@media (min-width: 968px) { 
+     .footer-flex {
+        padding: 1rem 4rem;
+     }
+}
+
+.footer-flex p {
+    margin: 0;
+}
+
+@media (min-width: 964px) {
+    .footer-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1rem 4rem;
+        gap: 2rem;
+        font-family: var(--fontSecondary);
+        font-weight: 700;
+    }
+}
+
+.vision h4,
+.mision h4,
+.valores h4 {
+    font-size: 1.6rem;
+}
+
+.vision p,
+.mision p,
+.valores ul li {
+    font-size: 1.2rem;
+}
+
+.mision {
+    padding-right: 2rem;
+}
+
+.valores ul li {
+    margin-bottom: .5rem;
+}
+
+
+@media (min-width: 968px) {
+    .lista {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .lista li:nth-child(6) {
+        grid-column: 1 / 3;
+    }
+}
+
+
+.p-footer {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    color: var(--colorGreen);
 }
