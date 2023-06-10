@@ -665,10 +665,10 @@ a {
     font-weight: 700;
 }
 
-@media (min-width: 968px) { 
-     .footer-flex {
+@media (min-width: 968px) {
+    .footer-flex {
         padding: 1rem 4rem;
-     }
+    }
 }
 
 .footer-flex p {
@@ -728,4 +728,66 @@ a {
     text-align: center;
     font-weight: 700;
     color: var(--colorGreen);
+}
+
+/* Button subir */
+.go-top-container {
+    position: fixed;
+    bottom: 0rem;
+    right: 0rem;
+    width: 3rem;
+    height: 3rem;
+    z-index: -1;
+}
+
+.go-top-button {
+    width: 0rem;
+    height: 0rem;
+    background-color: var(--colorGreen);
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.go-top-button .icon {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .3s;
+}
+
+.show {
+    z-index: 10;
+}
+
+.show .go-top-button {
+    animation: popup .3s ease-in-out;
+    width: 3rem;
+    height: 3rem;
+    z-index: 11;
+}
+
+.show .icon {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+    0% {
+        width: 0rem;
+        height: 0rem;
+    }
+
+    50% {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    100% {
+        width: 6.6rem;
+        height: 6.6rem;
+    }
 }
