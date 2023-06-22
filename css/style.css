@@ -403,7 +403,7 @@ a {
 }
 
 
-.flex-sect img, .clientes-grid img {
+.flex-sect img {
     max-width: 100%;
 }
 
@@ -414,7 +414,28 @@ a {
 
 .clientes-grid img {
     display: block;
+    width: 100%;
 }
+
+.clientes-grid .img-width {
+    max-width: 100%;
+    padding: 1rem;
+}
+
+@media (min-width: 460px) {
+    .clientes-grid .img-width {
+        max-width: 60%;
+    }
+}
+
+
+/* @media (min-width: 768px) { 
+     .clientes-grid .img-width {
+        height: 12rem;
+        margin-left: 0;
+        width: 12rem;
+     }
+} */
 
 @media (min-width: 768px) {
     .clientes-grid {
@@ -458,10 +479,6 @@ a {
         max-width: 100%;
     }
 
-    .img-width {
-        height: 10rem;
-        width: 10rem;
-    }
 }
 
 /* Categorias */
