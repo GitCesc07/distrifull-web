@@ -535,9 +535,23 @@ a {
 
 @media (min-width: 540px) {
     .catalog-flex {
+        padding: 0 6rem;
+    }
+}
+
+
+@media (min-width: 668px) { 
+     .catalog-flex {
+        padding: 0 8rem;
+     }
+}
+
+@media (min-width: 768px) {
+    .catalog-flex {
         padding: 0 9rem;
     }
 }
+
 
 /* @media (min-width: 694px) {
     .catalog-flex {
