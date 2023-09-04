@@ -665,7 +665,7 @@ a {
     font-weight: 700;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1020px) {
     .ubication-flex {
         display: flex;
         align-items: center;
